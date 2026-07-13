@@ -27,7 +27,7 @@ jobs:
             apt update
             apt install -y \
               python3-dev python3-pip build-essential \
-              libqt5concurrent5 libqt5core5a libqt5dbus5 qt5-wayland libqt5widgets5 libqt5wlshellintegration5 libqt5gui5 \
+              libqt5concurrent5 libqt5core5a libqt5dbus5 libqt5widgets5 libqt5gui5 \
               pkg-config
 
             pip3 config set global.index-url https://mirrors.loong64.com/pypi/simple
