@@ -1,0 +1,5 @@
+nuitka --onefile --windows-icon-from-ico=./cai_ico.ico --standalone --windows-console-mode=disable --show-progress --lto=yes --jobs=4 --enable-plugins=pyqt6 --include-data-file=./cai_ico.ico=./cai_ico.ico --include-data-file=./chs.qm=./chs.qm icon-ex15.py
+--include-module=.py模块+--include-data-file=.py模块文件
+--include-package=python模块
+--enable-plugins=upx 启用upx压缩二进制文件，但要把upx.exe放至C:\Users\用户名\AppData\Local\Programs\Python\Python312\Scripts下
+
