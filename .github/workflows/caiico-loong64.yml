@@ -31,7 +31,7 @@ jobs:
               pkg-config
 
             pip3 config set global.index-url https://mirrors.loong64.com/pypi/simple
-            pip3 install setuptools pyqt5 pefile pillow --break-system-packages
+            pip3 install setuptools pyqt6==6.4.1 pefile pillow --break-system-packages
 
             nuitka --onefile --windows-icon-from-ico=./cai_ico.ico --standalone --windows-console-mode=disable --show-progress --lto=yes --jobs=4 --enable-plugins=pyqt6 --include-data-file=./cai_ico.ico=./cai_ico.ico --include-data-file=./chs.qm=./chs.qm icon-ex20-linux-qt5.py
           '
